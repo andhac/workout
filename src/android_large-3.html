@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body>
+    <div class="container  w-[375px]">
+        <div class="nav h-[44px] flex justify-between items-center">
+           <h1 class="px-5">9:41</h1>
+ 
+           <div class="px-5">
+            <!-- Use the correct Font Awesome classes -->
+            <i class="fa fa-signal"></i>
+            <i class="fa fa-wifi"></i>
+            <i class="fa fa-battery-full"></i>
+          </div>
+       </div>
+       <form class="py-6 px-4" id="signupForm">
+           <p class="text-xl font-semibold  h-[23px] w-[200px] text-black">Create an account</p>
+           <br>
+            <br>
+           <input class="rounded-xl w-[343px] h-[50px] bg-[#F1F1F1] placeholder-montserrat text-xs font-semibold text-[#7F7F7F] pl-3 border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:outline-none focus:ring-sky-600" type="text" name="fname" placeholder="First Name" id="fname" required>
+           <br>
+           <br>
+           <input class="rounded-xl w-[343px] h-[50px] bg-[#F1F1F1] placeholder-montserrat text-xs font-semibold text-[#7F7F7F] pl-3 border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:outline-none focus:ring-sky-600" placeholder="Last Name" name="lname" id="lname" required>
+           
+           <br>
+             <br>
+           <input class="rounded-xl w-[343px] h-[50px] bg-[#F1F1F1] placeholder-montserrat text-xs font-semibold text-[#7F7F7F] pl-3 border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:outline-none focus:ring-sky-600" type="email" name="email" placeholder="Email" id="email" required>
+   
+           <br>
+          <br>
+           <input class="rounded-xl w-[343px] h-[50px] bg-[#F1F1F1] placeholder-montserrat text-xs font-semibold text-[#7F7F7F] pl-3 border-2 border-transparent hover:border-blue-500 focus:border-blue-500 focus:outline-none focus:ring-sky-600" type="password" name="password" placeholder="Password" id="password" required>
+   
+           <br>
+           <br>
+           <input class="w-[22px] h-[22px] absolute left-4" type="checkbox" name="checkbox" id="checkbox" required> <label class="w-[313px] h-[21px] absolute text-[12px] left-[46px] font-medium" for="checkbox">By proceeding, I agree to all <span class="text-blue-400 underline">T&C</span> and <span class="text-blue-400 underline">Privacy Policy</span> </label>
+           <button class="rounded-xl w-[343px] h-[50px] absolute top-[574px] left-4 bg-[#7B91FF] placeholder-montserrat text-sm font-semibold text-white pl-3 border border-transparent hover:border-blue-600 " type="submit" id="submitButton">Create an Account</button>
+
+           </form>
+       <div>
+           <hr class="bg-[#4d4c4c] w-[155px] border-[0.5px] absolute top-[655px] left-4">
+           <p class="left-[180px] absolute top-[642px]">Or</p>
+           <hr class="bg-[#4c4b4b] w-[155px] border-[0.5px] absolute top-[655px] left-[202px] font-medium text-[12px]">
+       </div>
+       <div class="flex justify-center items-center space-x-4">
+           <a href="https://accounts.google.com/InteractiveLogin/signinchooser?ifkv=ARZ0qKJ_Jvb122typ0gRGc_bG1KRUSIIX4EC1Srjo28vy88jDoml6zynzw_myDyGEXQ3j44VNY343w&theme=mn&ddm=0&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="w-12 h-12 rounded-lg border absolute top-[686px] left-[128px] border-gray-500 flex items-center justify-center">
+               <img src="./googleicon.png" class="w-[18px] h-[18px]" alt="">
+           </a>
+           <a href="http://facebook.com" class="w-12 h-12 rounded-lg border absolute top-[686px] left-[196px] border-gray-500 flex items-center justify-center">
+            <img src="./facebookicon.jpg" class="w-6 h-6" alt="">
+           </a>
+       </div>
+       <p class="w-[313px] h-[21px] absolute top-[756px] text-[12px] left-[90px] font-medium" id="signupMessage">Already have an account? <a class="text-blue-500 underline" href="./android_large-4.html">Login</a></p>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
